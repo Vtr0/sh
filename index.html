@@ -3171,7 +3171,7 @@ function webAPIinit(){
 		let entry = entries[0]; 
 		// condition 'entry.boundingClientRect.top <= entry.rootBounds.top' only catch the case label enter the top. 
 		//because elmPlaylist scroll so labels' position changes, I don't know how to deal with, so I do a emotionally hack, the next (after OR operator) is even if label is completely in elmPlaylist, buts its very close to top of elmPlaylist (no more than 1.5px), then consider it as pinned
-		entry.target.classList.toggle("stickyPinned", (entry.intersectionRatio < 1 && entry.boundingClientRect.top <= entry.rootBounds.top) || (entry.intersectionRatio == 1 && entry.boundingClientRect.top <= entry.rootBounds.top + 1.5));
+		entry.target.classList.toggle("stickyPinned", (entry.intersectionRatio < 1 && entry.boundingClientRect.top <= entry.rootBounds.top) );
 		console.log("IntersectionObserver: " + entry.target.getAttribute("for") + ". " + entry.intersectionRatio );
 
 		/* let _targetlId = entry.target.getAttribute("for"); //or any attribute to identify {target}
