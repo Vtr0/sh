@@ -1,4 +1,4 @@
-var _DEFAULT_CFG = {xState: {speed:1.4,volume:1,history:{currHis:0,hisList:[]}},
+var _DEFAULT_CFG = {xState: {speed:1.4,volume:1,muted:false,history:{currHis:0,hisList:[]}},
 cDBFilesEdt: {checkEdtDelay:600_000, edt:[101,101,102]}, //43_200_000,86_400_000
 xDBFilesCfg: {len:3,toLoad:null}}; 
 var ssData = ssData || {
